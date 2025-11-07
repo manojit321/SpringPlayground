@@ -17,4 +17,9 @@ public class HomeController {
     public ResponseEntity<String> healthV2() {
         return new ResponseEntity<>("I'm Good - v2", HttpStatus.OK);
     }
+
+    @GetMapping("/")
+    public ResponseEntity<String> home() {
+        return new ResponseEntity<>("Hello", HttpStatus.OK);
+    }
 }
